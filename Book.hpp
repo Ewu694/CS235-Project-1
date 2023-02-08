@@ -1,3 +1,11 @@
+/* 
+    Name: Eric Wu
+    Professor: Ms.Tiziana Ligorio
+    Course: CS235
+    Date Due: 02/10/2023
+    Description: This project creates the Book class with accessor and mutator functions.
+*/
+
 #ifndef Book_HPP
 #define Book_HPP
 

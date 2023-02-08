@@ -33,12 +33,12 @@ public:
                     with default value False
       @post       : The private members are set to the values of the corresponding parameters.
     */
-    void setName(const std::string& book_title_var);
+    void setTitle(const std::string& book_title_var);
     /**
     @param  : the title of the Book
     @post   : sets the Book's title to the value of the parameter
     */
-    std::string getName() const;
+    std::string getTitle() const;
     /**
     @return : the title of the Book
     */

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Book.hpp"
+#include "Book.cpp"
 
 int main() {
     std::cout << "TEST 1: TEST DEFAULT CONSTRUCTOR & ACCESSORS" << std::endl;

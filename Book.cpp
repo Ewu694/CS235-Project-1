@@ -18,18 +18,18 @@ Book::Book()
 
 Book::Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital = false)
 {
-    setName(book_title);
+    setTitle(book_title);
     setAuthor(book_author);
     setPageCount(book_page_count);
     book_digital_ = book_digital;
 }
 
-void Book::setName(const std::string &book_title_var)
+void Book::setTitle(const std::string &book_title_var)
 {
     book_title_ = book_title_var;
 }
 
-std::string Book::getName() const
+std::string Book::getTitle() const
 {
     return book_title_;
 }
@@ -49,9 +49,9 @@ void Book::setPageCount(const int & book_page_count_var)
     if(book_page_count_var > 0)
     {
         book_page_count_ = book_page_count_var;
+
     }
 }
-
 int Book::getPageCount() const
 {
     return book_page_count_;

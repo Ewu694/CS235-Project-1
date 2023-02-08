@@ -1,3 +1,11 @@
+/* 
+    Name: Eric Wu
+    Professor: Ms.Tiziana Ligorio
+    Course: CS235
+    Date Due: 02/10/2023
+    Description: This project creates the Book class with accessor and mutator functions.
+*/
+
 #include "Book.hpp"
 
 Book::Book()
@@ -13,7 +21,6 @@ Book::Book(std::string book_title, std::string book_author, int book_page_count,
     setName(book_title);
     setAuthor(book_author);
     setPageCount(book_page_count);
-    setDigital();
     book_digital_ = book_digital;
 }
 

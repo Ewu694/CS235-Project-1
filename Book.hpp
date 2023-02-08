@@ -10,6 +10,7 @@
 #define Book_HPP
 
 #include <iostream>
+#include <string>
 
 class Book{
 private:

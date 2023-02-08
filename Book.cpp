@@ -1,62 +1,66 @@
-#include Book.hpp
-using namespace std;
+#include "Book.hpp"
 
 Book::Book()
 {
-    string book_title = "";
-    string book_author = "";
-    int page_count = 0;
-    bool flag_available = false;
+    book_title = "";
+    book_author = "";
+    book_page_count = 0;
+    book_digital = false;
 }
 
-Book::Book(string title, string author, int page_count, bool flag_avilable)
+Book::Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital)
 {
-    setTitle(title);
-    setAuthor(author);
-    setPageCount(page_count);
-    setDigital(flag_available);
+    setTitle(book_title);
+    setAuthor(book_author);
+    setPageCount(book_page_count);
+    setDigital();
 }
 
-void setTitle(const string& book_title_var)
+void Book::setTitle(const std::string& book_title_var)
 {
     book_title = book_title_var;
 }
 
-string getTitle() const
+std::string Book::getTitle() const
 {
     return book_title;
 }
 
-void setAuthor(const string& book_author_var)
+void Book::setAuthor(const std::string& book_author_var)
 {
     book_author = book_author_var;
 }
 
-string setAuthor() const
+std::string Book::getAuthor() const
 {
     return book_author;
 }
 
-void setPageCount(const int& book_page_count_var)
+void Book::setPageCount(const int& book_page_count_var)
 {
+    if(book_page_count_var < 0)
+    {
+        std::cout << "Page count cannot be negative.";
+    }
     book_page_count = book_page_count_var;
 }
 
-int getPageCount() const
+int Book::getPageCount() const
 {
     return book_page_count;
 }
 
-void setDigital(const bool& book_digital_var)
+void Book::setDigital()
 {
-    book_digital_var = true;
-    book_digital = book_digital_var;
+    book_digital = true;
 }
 
-bool isDigital() const
+bool Book::isDigital() const
 {
-    book_digital = book_digital_var;
     if(book_digital == true){
         return true;
+    }
+    else{
+        return false;
     }
 }

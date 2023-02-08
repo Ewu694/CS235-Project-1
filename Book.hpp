@@ -5,10 +5,10 @@
 
 class Book{
 private:
-    std::string book_title;
-    std::string book_author;
-    int book_page_count;
-    bool book_digital;
+    std::string book_title_;
+    std::string book_author_;
+    int book_page_count_;
+    bool book_digital_;
 public:
     Book();
     /**
@@ -25,12 +25,12 @@ public:
                     with default value False
       @post       : The private members are set to the values of the corresponding parameters.
     */
-    void setTitle(const std::string& book_title_var);
+    void setName(const std::string& book_title_var);
     /**
     @param  : the title of the Book
     @post   : sets the Book's title to the value of the parameter
     */
-    std::string getTitle() const;
+    std::string getName() const;
     /**
     @return : the title of the Book
     */

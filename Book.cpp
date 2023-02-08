@@ -46,13 +46,9 @@ std::string Book::getAuthor() const
 
 void Book::setPageCount(const int & book_page_count_var)
 {
-    if(book_page_count_var < 0)
+    if(book_page_count_var > 0)
     {
-        std::cout<< "Page Count cannot be negative." << std::endl;
-    }
-    else
-    {
-    book_page_count_ = book_page_count_var;
+        book_page_count_ = book_page_count_var;
     }
 }
 

@@ -16,7 +16,7 @@ Book::Book()
     book_digital_ = false;
 }
 
-Book::Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital = false)
+Book::Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital)
 {
     setTitle(book_title);
     setAuthor(book_author);

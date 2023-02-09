@@ -24,7 +24,7 @@ public:
       Default constructor.
       Default-initializes all private members. Booleans are default-initialized to False.
    */
-    Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital);
+    Book(std::string book_title, std::string book_author, int book_page_count, bool book_digital = false);
     /**
       Parameterized constructor.
       @param      : The title of the book (a string)
